@@ -1,0 +1,11 @@
+div#game1 {
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    width: 400px;
+    height: 200px;
+    border: 5px solid #A89283;
+    border-radius: 15px;
+    background-color: #EBD6B7;
+    text-align: center;
+}
