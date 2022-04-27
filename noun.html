@@ -8,7 +8,7 @@
         <script src="main.js"></script>
         <script src="nouns.js"></script>
     </head>
-    <body onload="">
+    <body onload="choose()">
         <div id="navbar">
             <ul id="navbar">
               <li class="navbar" id="inactive">
@@ -24,12 +24,11 @@
           </div>
           <br><br>
           <div id="game1">
-              <p id="sc1">Score:<span id="score1">0 || Streak:<span id="streak1">0</span></p>
-              <p id="st1">Streak:<span id="streak1">0</span></p>
-              <br>
-              <p>Write the <span id="case1"></span></p>
+              <p id="sc1">Score:<span id="score">0</p>
+              <p>Write the <span id="case"></span> of <i><span id="nouns"></span></i></p>
+              <h6>Write answer in lower case</h6>
               <input type="text" id="input1">
-              <button onclick="">Check</button>
+              <button onclick="check()">Check</button>
           </div>
     </body>
 </html>
