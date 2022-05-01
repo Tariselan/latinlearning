@@ -214,6 +214,7 @@ function chooseC() { // chooses Case
 }
 function chooseN() { // chooses Noun
     let x = Math.floor(Math.random()*10); // for Noun
+    nounN = x;
     if (x == 0) {
         document.getElementById("nouns").innerHTML = nouns.puella.word;
     }
@@ -245,19 +246,400 @@ function chooseN() { // chooses Noun
         document.getElementById("nouns").innerHTML = nouns.dies.word;
     }
 }
-
 var correctWord = nouns.puella.nomS;
 
 function correct() { // changes Correct Word [Answer]
+    if (nounN == 0) {
+        if (nounC == 0) {
+            correctWord = nouns.puella.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.puella.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.puella.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.puella.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.puella.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.puella.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.puella.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.puella.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.puella.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.puella.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.puella.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.puella.ablP;
+        }
+    }
+    else if (nounN == 1) {
+        if (nounC == 0) {
+            correctWord = nouns.servus.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.servus.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.servus.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.servus.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.servus.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.servus.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.servus.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.servus.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.servus.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.servus.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.servus.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.servus.ablP;
+        }
+    }
+    else if (nounN == 2) {
+        if (nounC == 0) {
+            correctWord = nouns.puer.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.puer.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.puer.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.puer.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.puer.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.puer.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.puer.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.puer.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.puer.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.puer.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.puer.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.puer.ablP;
+        }
+    }
+    else if (nounN == 3) {
+        if (nounC == 0) {
+            correctWord = nouns.baculum.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.baculum.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.baculum.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.baculum.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.baculum.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.baculum.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.baculum.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.baculum.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.baculum.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.baculum.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.baculum.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.baculum.ablP;
+        }
+    }
+    else if (nounN == 4) {
+        if (nounC == 0) {
+            correctWord = nouns.vox.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.vox.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.vox.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.vox.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.vox.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.vox.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.vox.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.vox.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.vox.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.vox.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.vox.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.vox.ablP;
+        }
+    }
+    else if (nounN == 5) {
+        if (nounC == 0) {
+            correctWord = nouns.civis.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.civis.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.civis.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.civis.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.civis.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.civis.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.civis.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.civis.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.civis.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.civis.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.civis.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.civis.ablP;
+        }
+    }
+    else if (nounN == 6) {
+        if (nounC == 0) {
+            correctWord = nouns.nomen.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.nomen.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.nomen.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.nomen.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.nomen.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.nomen.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.nomen.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.nomen.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.nomen.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.nomen.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.nomen.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.nomen.ablP;
+        }
+    }
+    else if (nounN == 7) {
+        if (nounC == 0) {
+            correctWord = nouns.manus.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.manus.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.manus.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.manus.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.manus.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.manus.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.manus.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.manus.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.manus.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.manus.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.manus.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.manus.ablP;
+        }
+    }
+    else if (nounN == 8) {
+        if (nounC == 0) {
+            correctWord = nouns.cornu.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.cornu.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.cornu.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.cornu.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.cornu.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.cornu.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.cornu.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.cornu.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.cornu.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.cornu.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.cornu.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.cornu.ablP;
+        }
+    }
+    else if (nounN == 9) {
+        if (nounC == 0) {
+            correctWord = nouns.dies.nomS;
+        }
+        else if (nounC == 1) {
+            correctWord = nouns.dies.vocS;
+        }
+        else if (nounC == 2) {
+            correctWord = nouns.dies.accS;
+        }
+        else if (nounC == 3) {
+            correctWord = nouns.dies.genS;
+        }
+        else if (nounC == 4) {
+            correctWord = nouns.dies.datS;
+        }
+        else if (nounC == 5) {
+            correctWord = nouns.dies.ablS;
+        }
+        else if (nounC == 6) {
+            correctWord = nouns.dies.nomP;
+        }
+        else if (nounC == 7) {
+            correctWord = nouns.dies.vocP;
+        }
+        else if (nounC == 8) {
+            correctWord = nouns.dies.accP;
+        }
+        else if (nounC == 9) {
+            correctWord = nouns.dies.genP;
+        }
+        else if (nounC == 10) {
+            correctWord = nouns.dies.datP;
+        }
+        else if (nounC == 11) {
+            correctWord = nouns.dies.ablP;
+        }
+    }
 }
 function choose() {
     chooseC(); // chooses case
     chooseN(); // chooses nouns
+    correct(); // changes answer
 }
 
 function check() {
     let x = document.getElementById("input1").value;
     if (x == correctWord) {
         scoreInc();
+        choose();
     }
 }
