@@ -637,9 +637,35 @@ function choose() {
 }
 
 function check() {
-    let x = document.getElementById("input1").value;
+    let x = document.getElementById("input").value;
     if (x == correctWord) {
         scoreInc();
         choose();
     }
 }
+
+// <!----                ---!>
+var correctWord1 = "puella"; // correct word for Puella game
+var gWord1 = 0; // 0 n 1 v 2 a 3 g 4 d 5 ab 6 N 7 V 8 A 9 G 10 D 11 Ab --> lowercase = sing. , capital = pl.
+var score1 = 0;
+
+function check1() {
+    let x = document.getElementById("input1").value;
+    if (x == correctWord1) {
+        alert("");
+        scoreInc1();
+        nextWord1();
+    } 
+}
+
+function scoreInc1() {
+    score1++;
+    document.getElementById("score1").innerHTML = score1;
+}
+
+// <!----                ---!>
+function load() {
+    choose()
+}
+
+// <!----                ---!>

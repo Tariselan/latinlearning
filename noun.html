@@ -8,7 +8,7 @@
         <script src="main.js"></script>
         <script src="nouns.js"></script>
     </head>
-    <body onload="choose()">
+    <body onload="load()">
         <div id="navbar">
             <ul id="navbar">
               <li class="navbar" id="inactive">
@@ -23,12 +23,19 @@
             </ul>
           </div>
           <br><br>
-          <div id="game1">
-              <p id="sc1">Score:<span id="score">0</p>
+          <div class="game" id="game">
+              <p id="sc1">Score:<span id="score">0</span></p>
               <p>Write the <span id="case"></span> of <i><span id="nouns"></span></i></p>
               <h6>Write answer in lower case</h6>
-              <input type="text" id="input1">
+              <input type="text" id="input">
               <button onclick="check()">Check</button>
+          </div>
+          <div class="game" id="game1">
+            <p>Score:<span id="score1">0</span></p>
+            <p>Puella in the <span id="case1">Nominitave Singular</span> Case</p>
+            <h6>Write answer in lower case</h6>
+            <input type="text" id="input1">
+            <button onclick="check1()">Check</button>
           </div>
     </body>
 </html>
