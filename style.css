@@ -42,10 +42,6 @@ li.navbar a {
 li.navbar {
     border-right: 3px solid #444;
 }
-li.navbar:last-child {
-    border-right: none;
-    border-left: 3px solid #444;
-}
 #active {
     background-color: #028b59;
 }
