@@ -14,6 +14,16 @@ table#adjectives {
 table#adjectives td {
     width: 200px;
 }
+table#verbsAI {
+    width: 1200px;
+}
+table#verbsAI td {
+    width: 180px;
+    height: 20px;
+}
+table#verbsAI tr.dark td {
+    background-color: rgb(241, 172, 81);;
+}
 th.top, td.top {
     border-top: 2px solid;
 }
